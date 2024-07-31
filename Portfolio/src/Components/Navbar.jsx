@@ -13,6 +13,20 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const handleButtonClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1CMtS6e2ia3CyRLhVSNry2KLb5k8pmjL6/view?usp=sharing",
+      "_blank"
+    );
+
+    const link = document.createElement("a");
+    link.href =
+      "https://drive.google.com/uc?export=download&id=1CMtS6e2ia3CyRLhVSNry2KLb5k8pmjL6";
+    link.download = "PavanResume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <Box
@@ -43,11 +57,9 @@ const Navbar = () => {
           <Link href="#projects">Projects</Link>
           <Link href="#contact">Contact</Link>
           <Button
-            as="a"
-            href="/path/to/your/resume.pdf"
-            download="Pavan_Resume.pdf"
-            colorScheme="cyan"
+            colorScheme="teal"
             variant="outline"
+            onClick={handleButtonClick}
           >
             Resume
           </Button>
@@ -80,12 +92,9 @@ const Navbar = () => {
               Contact
             </Link>
             <Button
-              as="a"
-              href="/path/to/your/resume.pdf"
-              download="Pavan_Resume.pdf"
               colorScheme="teal"
               variant="outline"
-              onClick={onClose}
+              onClick={handleButtonClick}
             >
               Resume
             </Button>
