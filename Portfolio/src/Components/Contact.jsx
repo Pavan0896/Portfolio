@@ -1,6 +1,6 @@
 import { Box, Heading, VStack, Link, Text, Flex, Icon } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaPhone, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -46,6 +46,12 @@ const Contact = () => {
           <Flex align="center">
             <Icon as={FaPhone} boxSize={6} color="green.600" mr={2} />
             <Text fontSize="lg">+91 9901674558</Text>
+          </Flex>
+          <Flex align="center">
+            <Icon as={FaGithub} boxSize={6} color="black" mr={2} />
+            <Link href="https://github.com/Pavan0896" isExternal fontSize="lg">
+              GitHub
+            </Link>
           </Flex>
         </VStack>
       </motion.div>

@@ -15,7 +15,7 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleButtonClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1CMtS6e2ia3CyRLhVSNry2KLb5k8pmjL6/view?usp=sharing",
+      "https://drive.google.com/file/d/19F9pbcXqz0JXahE5KW_Dzci3J3ee6Y4f/view?usp=sharing",
       "_blank"
     );
 

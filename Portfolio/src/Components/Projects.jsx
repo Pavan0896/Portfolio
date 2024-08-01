@@ -72,10 +72,18 @@ const Projects = () => {
               />
             </Box>
             <Box flex="1" p={4}>
-              <Heading size="md" mb={2}>
+              <Heading
+                size="lg"
+                mb={2}
+                color="blue.600"
+                textDecoration="underline" 
+                textDecorationThickness="5px"
+              >
                 {project.title}
               </Heading>
-              <Text mb={2} fontSize={{ base: "sm", md: "md", lg: "lg" }}>{project.description}</Text>
+              <Text mb={2} fontSize={{ base: "sm", md: "md", lg: "lg" }}>
+                {project.description}
+              </Text>
               <Text mb={2}>
                 <strong>Tech Stack:</strong> {project.techStack.join(", ")}
               </Text>

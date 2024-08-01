@@ -13,7 +13,7 @@ const About = () => {
   const showGif = useBreakpointValue({ base: false, md: true });
   const handleButtonClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1CMtS6e2ia3CyRLhVSNry2KLb5k8pmjL6/view?usp=sharing",
+      "https://drive.google.com/file/d/19F9pbcXqz0JXahE5KW_Dzci3J3ee6Y4f/view?usp=sharing",
       "_blank"
     );
 
@@ -84,22 +84,22 @@ const About = () => {
               mb={4}
               lineHeight="1.6"
               color="gray.300"
-              textAlign={{ base: "center", md: "left" }}
+              textAlign="left"
             >
-              I’m a passionate web developer with a strong foundation in both
-              front-end and back-end technologies. I’m eager to apply my skills
-              to build efficient and scalable web applications and continuously
-              learn and grow in the tech field.
+              A passionate web developer with a strong foundation in both
+              front-end and back-end technologies, eager to apply these skills
+              to build efficient and scalable web applications while
+              continuously learning and growing in the tech field.
             </Text>
             <Text
               fontSize={{ base: "sm", md: "lg" }}
               mb={4}
               lineHeight="1.6"
               color="gray.300"
-              textAlign={{ base: "center", md: "left" }}
+              textAlign="left"
             >
-              My background in Mechanical Engineering has honed my analytical
-              and problem-solving abilities, providing me with a structured
+              With a background in Mechanical Engineering, analytical and
+              problem-solving abilities are well-honed, providing a structured
               approach to web development and a solid technical foundation.
             </Text>
             <Text
@@ -107,10 +107,11 @@ const About = () => {
               mb={4}
               lineHeight="1.6"
               color="gray.300"
-              textAlign={{ base: "center", md: "left" }}
+              textAlign="left"
             >
-              Outside of coding, I enjoy playing badminton, solving Sudoku
-              puzzles, and watching anime, which keeps me creative and balanced.
+              Outside of coding, enjoys playing badminton, solving Sudoku
+              puzzles, and watching anime, which keeps creativity and balance in
+              life.
             </Text>
             <Button
               colorScheme="cyan"

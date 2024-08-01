@@ -1,4 +1,13 @@
-import { Box, Heading, Text, Image, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Image,
+  Link,
+  IconButton,
+} from "@chakra-ui/react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -46,6 +55,32 @@ const Home = () => {
             </Text>
             , a full stack web developer.
           </Text>
+          <Flex
+            mt={6}
+            justify={{ base: "center", md: "flex-start" }}
+            gap={4}
+            mb="2%"
+          >
+            <Link
+              href="https://www.linkedin.com/in/pavan-kumar-a4a050250/"
+              isExternal
+            >
+              <IconButton
+                aria-label="LinkedIn"
+                icon={<FaLinkedin />}
+                size="lg"
+                colorScheme="whiteAlpha"
+              />
+            </Link>
+            <Link href="https://github.com/Pavan0896" isExternal>
+              <IconButton
+                aria-label="GitHub"
+                icon={<FaGithub />}
+                size="lg"
+                colorScheme="whiteAlpha"
+              />
+            </Link>
+          </Flex>
         </motion.div>
 
         <motion.div
