@@ -11,6 +11,19 @@ import { motion } from "framer-motion";
 
 const About = () => {
   const showGif = useBreakpointValue({ base: false, md: true });
+  const handleButtonClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1CMtS6e2ia3CyRLhVSNry2KLb5k8pmjL6/view?usp=sharing",
+      "_blank"
+    );
+
+    const link = document.createElement("a");
+    link.href = "/Pavan-Kumar-Resume.pdf";
+    link.download = "Pavan-Kumar-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <Box
@@ -100,14 +113,9 @@ const About = () => {
               puzzles, and watching anime, which keeps me creative and balanced.
             </Text>
             <Button
-              as="a"
-              href="/path/to/your/resume.pdf"
-              download="Pavan_Resume.pdf"
               colorScheme="cyan"
               variant="outline"
-              mt={6}
-              px={6}
-              py={4}
+              onClick={handleButtonClick}
             >
               Resume
             </Button>

@@ -20,9 +20,8 @@ const Navbar = () => {
     );
 
     const link = document.createElement("a");
-    link.href =
-      "https://drive.google.com/uc?export=download&id=1CMtS6e2ia3CyRLhVSNry2KLb5k8pmjL6";
-    link.download = "PavanResume.pdf";
+    link.href = "/Pavan-Kumar-Resume.pdf";
+    link.download = "Pavan-Kumar-Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -57,7 +56,7 @@ const Navbar = () => {
           <Link href="#projects">Projects</Link>
           <Link href="#contact">Contact</Link>
           <Button
-            colorScheme="teal"
+            colorScheme="cyan"
             variant="outline"
             onClick={handleButtonClick}
           >
@@ -92,7 +91,7 @@ const Navbar = () => {
               Contact
             </Link>
             <Button
-              colorScheme="teal"
+              colorScheme="cyan"
               variant="outline"
               onClick={handleButtonClick}
             >
