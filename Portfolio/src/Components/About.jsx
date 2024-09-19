@@ -13,7 +13,7 @@ const About = () => {
   const showGif = useBreakpointValue({ base: false, md: true });
   const handleButtonClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1BRUyaW4u6Xt3aWmU2t91osxO-kA4d8oY/view?usp=sharing",
+      "https://drive.google.com/file/d/1xjUC3WaMAhcOpe1nG0Q1xnE5x5dWz2Bg/view?usp=sharing",
       "_blank"
     );
 
